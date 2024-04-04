@@ -1,0 +1,26 @@
+/*Grid Setup*/
+body {
+  display: grid;
+  grid-template-areas: "nav nav nav nav nav" "main main main main aside" "main main main main aside" "main main main main aside" "main main main main aside";
+}
+
+header {
+  grid-area: nav;
+}
+main {
+  margin: 2vh 10vh;
+  padding: 2vh;
+  grid-area: main;
+}
+aside {
+  grid-area: aside;
+}
+/*Font and Image Sizing*/
+main p {
+  font-size: 0.8rem;
+}
+aside img {
+  border-radius: 2vh;
+  height: 85vh;
+  margin: 2vh 5vh;
+}
