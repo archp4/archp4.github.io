@@ -3,7 +3,7 @@ var btn = document.getElementById("btn");
 function validateForm() {
   var name = document.getElementById("name").value;
   var email = document.getElementById("email").value;
-  var phone = document.getElementById("phone").value;
+  var subject = document.getElementById("subject").value;
   var message = document.getElementById("message").value;
 
   if (name == null || name == "") {
@@ -12,8 +12,8 @@ function validateForm() {
   } else if (email == null || email == "") {
     alert("Email can't be blank");
     return false;
-  } else if (phone.length != 10) {
-    alert("Invalid Number");
+  } else if (subject == null || subject == "") {
+    alert("Subject can't be blank");
     return false;
   } else if (message == null || message == "") {
     alert("Message can't be blank");
@@ -26,15 +26,15 @@ btn.addEventListener("click", function (e) {
   e.preventDefault();
   var name = document.getElementById("name").value;
   var email = document.getElementById("email").value;
-  var phone = document.getElementById("phone").value;
+  var subject = document.getElementById("subject").value;
   var message = document.getElementById("message").value;
   var payload =
     "Name" +
     name +
     "<br/>\nEmail:" +
     email +
-    "<br/>\nPhone: " +
-    phone +
+    "<br/>\nSubject: " +
+    subject +
     "<br/>\nMessage : " +
     message;
 

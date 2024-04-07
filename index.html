@@ -4,46 +4,109 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arch's Portfolio | Homepage</title>
-    <link rel="stylesheet" href="/css/basic.css" />
-    <link rel="stylesheet" href="/css/index.css" />
     <link rel="shortcut icon" href="/image/logo.png" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body class="bg-[#212529] font-sans text-white">
     <header>
-      <nav>
-        <img id="logo" src="image/logo.png" alt="developer-logo" />
-        <ul>
-          <li>
-            <a style="color: #ffb742" href="/index.html">Home</a>
+      <nav class="flex justify-between mx-3 md:mx-10 my-4">
+        <img
+          id="logo"
+          src="image/logo.png"
+          class="w-10 h-8"
+          alt="developer-logo"
+        />
+        <ul class="hidden md:flex text-xl">
+          <li class="ml-20">
+            <a class="text-[#ffb742]" href="/index.html">Home</a>
           </li>
-          <li><a href="/about_me.html">About Me</a></li>
-          <li><a href="/work.html">My Work</a></li>
-          <li><a href="/contact.html">Contact Me</a></li>
+          <li class="ml-5">
+            <a class="hover:text-[#ffb742]" href="/about_me.html">About Me</a>
+          </li>
+          <li class="ml-5">
+            <a class="hover:text-[#ffb742]" href="/work.html">My Work</a>
+          </li>
+          <li class="ml-5">
+            <a class="hover:text-[#ffb742]" href="/contact.html">Contact Me</a>
+          </li>
         </ul>
-        <div class="btn btn-yellow">
+        <div
+          class="focus:outline-none text-black bg-[#ffb742] shadow-sm hover:shadow-[#ffb742] focus:ring-4 rounded-full text-sm font-bold px-5 py-2 me-2 mb-2"
+        >
           <a href="https://resume.io/r/UwUHJVKz4">View Resume</a>
         </div>
       </nav>
     </header>
-    <main>
+    <main class="flex justify-center">
       <section id="intro">
-        <article id="intro-article">
-          <h3>
+        <article
+          id="intro-article"
+          class="text-center mt-[15vh] mx-[2vh] mb-6 sm:mb-12"
+        >
+          <h3 class="text-lg md:text-2xl block font-bold">
             Hi, I am
-            <span class="name">Arch Patel</span>
-            <img id="wave" src="image/wave.png" alt="wave" />
+            <span class="underline-offset-4 underline text-[#ffb742]"
+              >Arch Patel</span
+            >
+            <img
+              id="wave"
+              src="image/wave.png"
+              class="w-6 inline-block"
+              alt="wave"
+            />
           </h3>
-          <h1>Software Developer And Otaku</h1>
+          <h1 class="text-2xl md:text-4xl font-bold my-4">
+            Software Developer And Otaku
+          </h1>
           <p>
             I design and code beautifully simple things, and I love anime,comics
             and games.
           </p>
-          <img
-            style="margin-top: 40px"
-            id="avatar"
-            src="image/avatar.png"
-            alt="avatar"
-          />
+          <div class="flex justify-center">
+            <img
+              id="avatar"
+              class="w-36 mt-5 content-center"
+              src="image/avatar.png"
+              alt="avatar"
+            />
+          </div>
+        </article>
+
+        <article class="my-8">
+          <ul class="flex justify-center gap-4">
+            <li class="p-2 w-12 rounded-full bg-[#ffffff14]">
+              <a href="https://github.com/archp4" target="_blank"
+                ><img
+                  src="/image/svg/Untitled (2).png"
+                  class="fill-white"
+                  alt="github"
+              /></a>
+            </li>
+            <li class="p-2 w-12 rounded-full bg-[#ffffff14]">
+              <a href="https://www.facebook.com/arch.patel.16" target="_blank"
+                ><img src="/image/svg/Untitled (1).png" alt="facebook"
+              /></a>
+            </li>
+            <li class="p-2 w-12 rounded-full bg-[#ffffff14]">
+              <a
+                href="https://www.linkedin.com/in/patelarch16/?originalSubdomain=ca"
+                target="_blank"
+                ><img src="/image/svg/Untitled (4).png" alt="linkedin"
+              /></a>
+            </li>
+            <li class="p-2 w-12 rounded-full bg-[#ffffff14]">
+              <a href="https://twitter.com/archpatel4" target="_blank"
+                ><img src="/image/svg/Untitled (5).png" alt="twitter"
+              /></a>
+            </li>
+            <li class="p-2 w-12 rounded-full bg-[#ffffff14]">
+              <a
+                href="https://www.youtube.com/channel/UCUp1FzKMt5n1UPiuehHKXGQ"
+                target="_blank"
+                ><img src="/image/svg/Untitled (6).png" alt="youtube"
+              /></a>
+            </li>
+          </ul>
         </article>
       </section>
     </main>

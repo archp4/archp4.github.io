@@ -3,88 +3,131 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arch's Portfolio | About me</title>
-    <link rel="stylesheet" href="/css/basic.css" />
-    <link rel="stylesheet" href="/css/work.css" />
+    <title>Arch's Works</title>
     <link rel="shortcut icon" href="/image/logo.png" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body class="bg-[#212529] font-sans text-white">
     <header>
-      <nav>
-        <img id="logo" src="image/logo.png" alt="developer-logo" />
-        <ul>
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/about_me.html">About Me</a></li>
-          <li><a style="color: #ffb742" href="/work.html">My Work</a></li>
-          <li><a href="/contact.html">Contact Me</a></li>
+      <nav class="flex justify-between mx-3 md:mx-10 my-4">
+        <img
+          id="logo"
+          src="image/logo.png"
+          class="w-10 h-8"
+          alt="developer-logo"
+        />
+        <ul class="hidden md:flex text-xl">
+          <li class="ml-20">
+            <a class="hover:text-[#ffb742]" href="/index.html">Home</a>
+          </li>
+          <li class="ml-5">
+            <a class="hover:text-[#ffb742]" href="/about_me.html">About Me</a>
+          </li>
+          <li class="ml-5">
+            <a class="text-[#ffb742]" href="/work.html">My Work</a>
+          </li>
+          <li class="ml-5">
+            <a class="hover:text-[#ffb742]" href="/contact.html">Contact Me</a>
+          </li>
         </ul>
-        <div>
-          <!-- <a href="#">View Resume</a> -->
+        <div
+          class="focus:outline-none text-black bg-[#ffb742] shadow-sm hover:shadow-[#ffb742] focus:ring-4 rounded-full text-sm font-bold px-5 py-2 me-2 mb-2"
+        >
+          <a href="https://resume.io/r/UwUHJVKz4">View Resume</a>
         </div>
       </nav>
     </header>
     <main>
-      <section id="skills">
+      <section id="skills" class="my-4 mx-16 lg:mx-[15vh]">
         <div class="support-panel">
-          <div class="container">
-            <p>My Skills</p>
+          <div class="px-4 py-2 bg-[#ffffff14] inline-block rounded-full mb-4">
+            <p class="inline-block text-[#ffb742] text-base">MY SKILLS</p>
           </div>
-          <div id="skills-description">
-            <h2>What My Programing Skills I Use?</h2>
-            <p>
-              I develop simple , intuitive and responsive user interface that
-              helps users get things done with less effort and time with these
-              technologies.
-            </p>
-            <!-- <button class="btn btn-yellow">
-              <a href="#contact-form">Hire me</a>
-            </button> -->
-          </div>
-        </div>
-        <div class="side-panel">
-          <div class="skill-grid">
-            <img class="img-container" src="image/andirod.png" alt="andirod" />
-            <img
-              class="img-container"
-              src="image/flutter.png"
-              style="object-fit: contain"
-              alt="Flutter"
-            />
-            <img class="img-container" src="image/html.png" alt="html" />
-            <img
-              class="img-container"
-              src="image/css.png"
-              style="object-fit: contain"
-              alt="css"
-            />
-            <img class="img-container" src="image/python.png" alt="python" />
-            <img
-              class="img-container"
-              src="image/figma.png"
-              style="height: 54px; width: 54px; padding: 0%"
-              alt="figma"
-            />
-            <img class="img-container" src="image/php.png" alt="php" />
-            <img class="img-container" src="image/git.png" alt="git" />
-            <div class="skill-support-panel"></div>
-          </div>
+          <article class="flex flex-col xl:flex-row justify-between">
+            <div id="skills-description" class="mb-8">
+              <h2 class="text-2xl font-bold mb-2">
+                What Programing Skills I Use?
+              </h2>
+              <p class="text-justify lg:text-left lg:w-[60vh]">
+                I develop simple , intuitive and responsive user interface that
+                helps users get things done with less effort and time with these
+                technologies.
+              </p>
+            </div>
+            <div
+              class="mx-auto lg:mx-0 grid gap-4 grid-cols-3 lg:grid-cols-4 w-[50vh]"
+            >
+              <img
+                class="w-14 h-14 p-2 bg-[#ffffff14] rounded-lg"
+                src="image/andirod.png"
+                alt="andirod"
+              />
+              <img
+                class="w-14 h-14 p-2 bg-[#ffffff14] rounded-lg"
+                src="image/flutter.png"
+                style="object-fit: contain"
+                alt="Flutter"
+              />
+              <img
+                class="w-14 h-14 p-2 bg-[#ffffff14] rounded-lg"
+                src="image/html.png"
+                alt="html"
+              />
+              <img
+                class="w-14 h-14 p-2 bg-[#ffffff14] rounded-lg"
+                src="image/css.png"
+                style="object-fit: contain"
+                alt="css"
+              />
+              <img
+                class="w-14 h-14 p-2 bg-[#ffffff14] rounded-lg"
+                src="image/python.png"
+                alt="python"
+              />
+              <img
+                class="w-14 h-14 p-2 bg-[#ffffff14] rounded-lg"
+                src="image/figma.png"
+                alt="figma"
+              />
+              <img
+                class="w-14 h-14 p-2 bg-[#ffffff14] rounded-lg"
+                src="image/php.png"
+                alt="php"
+              />
+              <img
+                class="w-14 h-14 p-2 bg-[#ffffff14] rounded-lg"
+                src="image/git.png"
+                alt="git"
+              />
+              <div class="skill-support-panel"></div>
+            </div>
+          </article>
         </div>
       </section>
-      <section id="work-label">
-        <div id="skills-description">
-          <div class="container">
-            <p>My Works</p>
-          </div>
+      <section
+        id="work-label"
+        class="w-full flex flex-col justify-center mb-12"
+      >
+        <div class="mb-4 mx-auto mt-12">
+          <p
+            class="inline-block px-4 py-2 bg-[#ffffff14] rounded-full text-[#ffb742] text-base text-center"
+          >
+            MY WORKS
+          </p>
         </div>
-
         <div id="skills-description">
-          <h2>My Recent Work</h2>
+          <h2 class="uppercase text-2xl text-center font-bold">
+            MY RECENT WORK
+          </h2>
         </div>
       </section>
-      <section id="works">
-        <article>
-          <h2>My Updated Portfolio Website</h2>
-          <p>
+      <section
+        id="works"
+        class="grid grid-cols-1 gap-2 lg:gap-8 lg:grid-cols-2 xl:grid-cols-3 m-8 lg:mx-[15vh]"
+      >
+        <article class="p-4 sm:p-8 sm:py-12 mb-4 bg-[#ffffff14] rounded-lg">
+          <h2 class="text-2xl font-bold mb-5">My Updated Portfolio Website</h2>
+          <p class="text-sm mb-6">
             This project entails upgrading my portfolio website from Flutter to
             HTML and CSS. The transition aims to enhance performance,
             accessibility, and customization options, ensuring a sleek and
@@ -97,11 +140,11 @@
             technical skills, and contributing to academic and professional
             development
           </p>
-          <h4>March 2024</h4>
+          <h4 class="font-extrabold text-lg text-mono">March 2024</h4>
         </article>
-        <article>
-          <h2>Link Store App</h2>
-          <p>
+        <article class="p-4 sm:p-8 sm:py-12 mb-4 bg-[#ffffff14] rounded-lg">
+          <h2 class="text-2xl font-bold mb-5">Link Store App</h2>
+          <p class="text-sm mb-6">
             The Link Store app, built using Flutter, simplifies link management
             by providing a user-friendly platform to organize and categorize
             links efficiently. Users can easily add descriptions, categorize
@@ -115,11 +158,11 @@
             and manage their links effectively, thereby enhancing their digital
             productivity.
           </p>
-          <h4>October 2023</h4>
+          <h4 class="font-extrabold text-lg text-mono">October 2023</h4>
         </article>
-        <article>
-          <h2>Novel Audio Generator</h2>
-          <p>
+        <article class="p-4 sm:p-8 sm:py-12 mb-4 bg-[#ffffff14] rounded-lg">
+          <h2 class="text-2xl font-bold mb-5">Novel Audio Generator</h2>
+          <p class="text-sm mb-6">
             This project features a real-time data scarping of novel then audio
             generation that fetches data from Novel Cool website via a custom
             API made in python. Users can request audio files for their favorite
@@ -130,7 +173,9 @@
             preferences, enhancing accessibility and providing a dynamic reading
             experience through audio format.
           </p>
-          <h4>May 2023 - August 2023</h4>
+          <h4 class="font-extrabold text-lg text-mono">
+            May 2023 - August 2023
+          </h4>
         </article>
       </section>
     </main>
